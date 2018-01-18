@@ -1,0 +1,13 @@
+{
+  "name": "file-creator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vsts-task-lib": "2.1.0"
+  }
+}

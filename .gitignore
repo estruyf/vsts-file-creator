@@ -1,0 +1,7 @@
+.DS_Store
+
+*.vsix
+*.zip
+*.pxm
+
+buildtask/node_modules

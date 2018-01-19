@@ -4,6 +4,7 @@
   "name": "File Creator",
   "version": "1.0.0",
   "publisher": "eliostruyf",
+  "public": true,
   "tags": [
     "File",
     "Create",

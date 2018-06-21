@@ -35,7 +35,11 @@
       "label": "File content",
       "defaultValue": "",
       "required": true,
-      "helpMarkDown": "Specify the content of the file."
+      "helpMarkDown": "Specify the content of the file.",
+      "properties": {
+        "resizable": "true",
+        "rows": "10"
+      }
     }
   ],
   "execution": {

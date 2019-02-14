@@ -7,7 +7,7 @@
   "category": "Utility",
   "author": "Elio Struyf",
   "version": {
-    "Major": 2,
+    "Major": 3,
     "Minor": 0,
     "Patch": 0
   },
@@ -40,6 +40,14 @@
         "resizable": "true",
         "rows": "10"
       }
+    },
+    {
+      "name": "endWithNewLine",
+      "type": "boolean",
+      "label": "End file with new line",
+      "defaultValue": false,
+      "required": false,
+      "helpMarkDown": "Specifies if you want to automatically add a new line at the end of the file that will be created."
     }
   ],
   "execution": {

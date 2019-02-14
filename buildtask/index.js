@@ -9,6 +9,7 @@ tl.setResourcePath(path.join(__dirname, 'task.json'));
 const filepath = tl.getInput('filepath', true, true);
 const filecontent = tl.getInput('filecontent', true);
 const fileoverwrite = tl.getInput('fileoverwrite', true);
+const endWithNewLine = tl.getInput('endWithNewLine', false);
 
 console.log(`File path: ${filepath}`);
 // console.log(`File content: ${filecontent}`);
@@ -35,6 +36,10 @@ if (filepath && filecontent) {
   if (!tl.exist(filepath) || fileoverwrite) {
     // Create the folder, if needed
     ensureDirectoryExistence(filepath);
+    // Check if new line needs to be added at the end of the file
+    if (endWithNewLine) {
+      filecontent = filecontent + "\n";
+    }
     // Create the file
     tl.writeFile(filepath, filecontent, 'utf8');
     // Check if the file is created

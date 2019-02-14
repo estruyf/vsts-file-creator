@@ -18,6 +18,10 @@ With this property you can specify the path of the file including its name. Exam
 
 Specify the content of the file you want to add.
 
+### Should file end with a new line
+
+When this is checked, the task will automatically add a new line at the end the created file.
+
 ## Feedback
 
 Feedback is always welcome. Please submit it via creating an issue in the repository [issue list](https://github.com/estruyf/vsts-file-creator/issues).

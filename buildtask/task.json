@@ -7,9 +7,9 @@
   "category": "Utility",
   "author": "Elio Struyf",
   "version": {
-    "Major": 3,
+    "Major": 4,
     "Minor": 0,
-    "Patch": 1
+    "Patch": 0
   },
   "instanceNameFormat": "File Creator",
   "inputs": [

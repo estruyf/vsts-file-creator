@@ -7,7 +7,7 @@ tl.setResourcePath(path.join(__dirname, 'task.json'));
 
 // Get the two property values
 const filepath = tl.getInput('filepath', true, true);
-const filecontent = tl.getInput('filecontent', true);
+let filecontent = tl.getInput('filecontent', true);
 const fileoverwrite = tl.getInput('fileoverwrite', true);
 const endWithNewLine = tl.getInput('endWithNewLine', false);
 

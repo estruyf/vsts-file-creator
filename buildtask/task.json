@@ -7,7 +7,7 @@
   "category": "Utility",
   "author": "Elio Struyf",
   "version": {
-    "Major": 4,
+    "Major": 5,
     "Minor": 0,
     "Patch": 0
   },
@@ -20,6 +20,14 @@
       "defaultValue": false,
       "required": false,
       "helpMarkDown": "Specify if you want to overwrite the file if it already exists."
+    },
+    {
+      "name": "skipempty",
+      "type": "boolean",
+      "label": "Skip file creation when content is empty",
+      "defaultValue": false,
+      "required": false,
+      "helpMarkDown": "Specify if you want to skip file creation when the provided content is empty."
     },
     {
       "name": "filepath",

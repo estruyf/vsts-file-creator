@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "build-task",
   "name": "File Creator",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "publisher": "eliostruyf",
   "public": true,
   "tags": [
@@ -19,7 +19,8 @@
   ],    
   "description": "This extension allows you to create a new file during your build or release pipeline.",
   "categories": [
-    "Build and release"
+    "Build and release",
+    "Azure Pipelines"
   ],
   "icons": {
     "default": "images/extension-icon.png"        

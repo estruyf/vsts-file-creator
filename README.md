@@ -25,3 +25,12 @@ When this is checked, the task will automatically add a new line at the end the 
 ## Feedback
 
 Feedback is always welcome. Please submit it via creating an issue in the repository [issue list](https://github.com/estruyf/vsts-file-creator/issues).
+
+## Changelog
+
+### [6.0.0] 8/10/2020
+
+- [#7](https://github.com/estruyf/vsts-file-creator/issues/7): Added `verbose` logging setting 
+- [#8](https://github.com/estruyf/vsts-file-creator/issues/8): Fix for `SyntaxError` in block-scoped declarations
+- [#9](https://github.com/estruyf/vsts-file-creator/issues/9): Added support for creating empty files
+- [#12](https://github.com/estruyf/vsts-file-creator/issues/12): Switched the `string` setting to `filePath` to be able to select your path

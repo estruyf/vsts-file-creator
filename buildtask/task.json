@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
   "id": "1f81a8be-d8ce-497d-9791-190126f661e7",
   "name": "file-creator",
   "friendlyName": "File Creator",
@@ -7,12 +8,32 @@
   "category": "Utility",
   "author": "Elio Struyf",
   "version": {
-    "Major": 5,
+    "Major": 6,
     "Minor": 0,
     "Patch": 0
   },
   "instanceNameFormat": "File Creator",
   "inputs": [
+    {
+      "name": "filepath",
+      "type": "filePath",
+      "label": "File path",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Specify the path and name of the file you want to create."
+    },
+    {
+      "name": "filecontent",
+      "type": "multiLine",
+      "label": "File content",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "Specify the content of the file.",
+      "properties": {
+        "resizable": "true",
+        "rows": "10"
+      }
+    },
     {
       "name": "fileoverwrite",
       "type": "boolean",
@@ -30,36 +51,24 @@
       "helpMarkDown": "Specify if you want to skip file creation when the provided content is empty."
     },
     {
-      "name": "filepath",
-      "type": "string",
-      "label": "File path",
-      "defaultValue": "",
-      "required": true,
-      "helpMarkDown": "Specify the path and name of the file you want to create."
-    },
-    {
-      "name": "filecontent",
-      "type": "multiLine",
-      "label": "File content",
-      "defaultValue": "",
-      "required": true,
-      "helpMarkDown": "Specify the content of the file.",
-      "properties": {
-        "resizable": "true",
-        "rows": "10"
-      }
-    },
-    {
       "name": "endWithNewLine",
       "type": "boolean",
       "label": "End file with new line",
       "defaultValue": false,
       "required": false,
       "helpMarkDown": "Specifies if you want to automatically add a new line at the end of the file that will be created."
+    },
+    {
+      "name": "verbose",
+      "type": "boolean",
+      "label": "Verbose logging",
+      "defaultValue": false,
+      "required": false,
+      "helpMarkDown": "This outputs all the variable values during when running the task."
     }
   ],
   "execution": {
-    "Node": {
+    "Node10": {
       "target": "index.js"
     }
   }

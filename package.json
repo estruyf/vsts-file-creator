@@ -1,0 +1,24 @@
+{
+  "name": "vsts-file-creator",
+  "version": "6.0.0",
+  "description": "This extension allows you to create a new file during your build or release pipeline.",
+  "main": "buildtask/index.js",
+  "scripts": {
+    "build": "npm run build:task && tfx extension create --manifest-globs vss-extension.json",
+    "build:task": "cd buildtask && npm run build",
+    "publish": "tfx extension publish --manifest-globs your-manifest.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estruyf/vsts-file-creator.git"
+  },
+  "author": "Elio Struyf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estruyf/vsts-file-creator/issues"
+  },
+  "homepage": "https://github.com/estruyf/vsts-file-creator#readme",
+  "devDependencies": {
+    "tfx-cli": "0.8.3"
+  }
+}

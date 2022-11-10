@@ -10,7 +10,7 @@
   "author": "Elio Struyf",
   "license": "MIT",
   "dependencies": {
-    "azure-pipelines-task-lib": "2.11.2"
+    "azure-pipelines-task-lib": "4.0.1-preview"
   },
   "devDependencies": {
     "@types/node": "14.11.5",

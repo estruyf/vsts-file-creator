@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "build-task",
   "name": "File Creator",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "publisher": "eliostruyf",
   "public": true,
   "tags": [
@@ -12,46 +12,38 @@
     "Build",
     "Release"
   ],
-  "targets": [
-    {
-      "id": "Microsoft.VisualStudio.Services"
-    }
-  ],    
+  "targets": [{
+    "id": "Microsoft.VisualStudio.Services"
+  }],
   "description": "This extension allows you to create a new file during your build or release pipeline.",
   "categories": [
     "Build and release",
     "Azure Pipelines"
   ],
   "icons": {
-    "default": "images/extension-icon.png"        
+    "default": "images/extension-icon.png"
   },
-  "files": [
-    {
-      "path": "buildtask"
+  "files": [{
+    "path": "buildtask"
+  }],
+  "contributions": [{
+    "id": "custom-build-task",
+    "type": "ms.vss-distributed-task.task",
+    "targets": [
+      "ms.vss-distributed-task.tasks"
+    ],
+    "properties": {
+      "name": "buildtask"
     }
-  ],
-  "contributions": [
-    {
-      "id": "custom-build-task",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "buildtask"
-      }
-    }
-  ],
-  "content":{
-    "details":{
+  }],
+  "content": {
+    "details": {
       "path": "README.md"
     }
   },
-  "screenshots":[
-    {
-      "path": "images/file-creator-options.png"
-    }
-  ],
+  "screenshots": [{
+    "path": "images/file-creator-options.png"
+  }],
   "links": {
     "repository": {
       "uri": "https://github.com/estruyf/vsts-file-creator"

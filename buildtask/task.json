@@ -8,13 +8,12 @@
   "category": "Utility",
   "author": "Elio Struyf",
   "version": {
-    "Major": 6,
+    "Major": 7,
     "Minor": 0,
     "Patch": 0
   },
   "instanceNameFormat": "File Creator",
-  "inputs": [
-    {
+  "inputs": [{
       "name": "filepath",
       "type": "filePath",
       "label": "File path",
@@ -30,7 +29,7 @@
       "required": false,
       "helpMarkDown": "Specify the content of the file.",
       "properties": {
-        "resizable": "true",
+        "resizable": true,
         "rows": "10"
       }
     },

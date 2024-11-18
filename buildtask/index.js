@@ -37,13 +37,13 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             // Get all string values
-            const filepath = tl.getInput('filepath', true);
-            let filecontent = tl.getInput('filecontent', false) || "";
+            const filepath = tl.getInput("filepath", true);
+            let filecontent = tl.getInput("filecontent", false) || "";
             // Get all boolean values
-            const fileoverwrite = tl.getInput('fileoverwrite', true) === "true";
-            const skipempty = tl.getInput('skipempty', true) === "true";
-            const endWithNewLine = tl.getInput('endWithNewLine', false) === "true";
-            const verbose = tl.getInput('verbose', false) === "true";
+            const fileoverwrite = tl.getInput("fileoverwrite", true) === "true";
+            const skipempty = tl.getInput("skipempty", true) === "true";
+            const endWithNewLine = tl.getInput("endWithNewLine", false) === "true";
+            const verbose = tl.getInput("verbose", false) === "true";
             if (verbose) {
                 console.log(`VERBOSE LOGGING`);
                 console.log(`----------------`);
@@ -81,17 +81,17 @@ function run() {
                             console.log(`----------------`);
                         }
                         // Create the file
-                        tl.writeFile(filepath, filecontent, 'utf8');
+                        tl.writeFile(filepath, filecontent, "utf8");
                         // Check if the file is created
                         if (tl.exist(filepath)) {
-                            tl.setResult(tl.TaskResult.Succeeded, 'File created');
+                            tl.setResult(tl.TaskResult.Succeeded, "File created");
                         }
                         else {
-                            tl.setResult(tl.TaskResult.Failed, 'File not created / overwritten');
+                            tl.setResult(tl.TaskResult.Failed, "File not created / overwritten");
                         }
                     }
                     else {
-                        tl.setResult(tl.TaskResult.Failed, 'File already exists');
+                        tl.setResult(tl.TaskResult.Failed, "File already exists");
                     }
                 }
             }

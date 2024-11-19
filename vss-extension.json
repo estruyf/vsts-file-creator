@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "build-task",
   "name": "File Creator",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "publisher": "eliostruyf",
   "public": true,
   "tags": [

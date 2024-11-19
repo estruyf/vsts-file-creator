@@ -5,3 +5,4 @@
 *.pxm
 
 buildtask/node_modules
+node_modules

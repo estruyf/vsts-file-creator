@@ -10,7 +10,7 @@
   "version": {
     "Major": 7,
     "Minor": 0,
-    "Patch": 0
+    "Patch": 1
   },
   "instanceNameFormat": "File Creator",
   "inputs": [{
@@ -67,7 +67,7 @@
     }
   ],
   "execution": {
-    "Node10": {
+    "Node20_1": {
       "target": "index.js"
     }
   }
